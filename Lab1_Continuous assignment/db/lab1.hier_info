@@ -1,0 +1,70 @@
+|cau3c
+D => D~0.IN3
+CLK => CLK~0.IN2
+Qa <= d_latch:m1.Qa
+Qan <= d_latch:m1.Qb
+Qb <= d_ff:m2.Q
+Qbn <= d_ff:m2.Qn
+Qc <= d_ff:m3.Q
+Qcn <= d_ff:m3.Qn
+
+
+|cau3c|d_latch:m1
+D => Sg~0.IN0
+D => Rg~0.IN0
+CLK => Sg~0.IN1
+CLK => Rg~0.IN1
+Qa <= Qa~1.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau3c|d_ff:m2
+D => D~0.IN1
+CLK => CLK~0.IN1
+Q <= d_latch:Slave.Qa
+Qn <= d_latch:Slave.Qb
+
+
+|cau3c|d_ff:m2|d_latch:Master
+D => Sg~0.IN0
+D => Rg~0.IN0
+CLK => Sg~0.IN1
+CLK => Rg~0.IN1
+Qa <= Qa~1.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau3c|d_ff:m2|d_latch:Slave
+D => Sg~0.IN0
+D => Rg~0.IN0
+CLK => Sg~0.IN1
+CLK => Rg~0.IN1
+Qa <= Qa~1.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau3c|d_ff:m3
+D => D~0.IN1
+CLK => CLK~0.IN1
+Q <= d_latch:Slave.Qa
+Qn <= d_latch:Slave.Qb
+
+
+|cau3c|d_ff:m3|d_latch:Master
+D => Sg~0.IN0
+D => Rg~0.IN0
+CLK => Sg~0.IN1
+CLK => Rg~0.IN1
+Qa <= Qa~1.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cau3c|d_ff:m3|d_latch:Slave
+D => Sg~0.IN0
+D => Rg~0.IN0
+CLK => Sg~0.IN1
+CLK => Rg~0.IN1
+Qa <= Qa~1.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

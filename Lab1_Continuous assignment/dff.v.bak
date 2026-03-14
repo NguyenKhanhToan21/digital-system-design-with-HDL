@@ -1,0 +1,10 @@
+module dff (
+	input D,CLK,
+	output Q, Qn
+);
+	wire Qm,Qmn;
+	
+	dlatch Q1 (.D(D), .CLK(~CLK), .Qa(Qm), .Qb(Qmn));
+	dlatch Q2 (.D(Qm), .CLK(CLK), .Qa(Q), .Qb(Qn));
+endmodule
+

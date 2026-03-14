@@ -1,0 +1,21 @@
+module cau2c (
+	input [17:0] SW,
+	output [6:0] HEX4, HEX3, HEX2, HEX1, HEX0
+);
+	wire [2:0] m4,m3,m2,m1,m0;
+	
+	mux5to1_3bit mux4( .d0(SW[14:12]), .d1(SW[11:9]), .d2(SW[8:6]), .d3(SW[5:3]), .d4(SW[2:0]), .s(SW[17:15]), .out(m4));
+	hex7seg h4 (.c(m4), .display(HEX4));
+	
+	mux5to1_3bit mux3( .d0(SW[11:9]), .d1(SW[8:6]), .d2(SW[5:3]), .d3(SW[2:0]), .d4(SW[14:12]), .s(SW[17:15]), .out(m3));
+	hex7seg h3 (.c(m3), .display(HEX3));
+	
+	mux5to1_3bit mux2( .d0(SW[8:6]), .d1(SW[5:3]), .d2(SW[2:0]), .d3(SW[14:12]), .d4(SW[11:9]), .s(SW[17:15]), .out(m2));
+	hex7seg h2 (.c(m2), .display(HEX2));
+		
+	mux5to1_3bit mux1( .d0(SW[5:3]), .d1(SW[2:0]), .d2(SW[14:12]), .d3(SW[11:9]), .d4(SW[8:6]), .s(SW[17:15]), .out(m1));
+	hex7seg h1 (.c(m1), .display(HEX1));
+	
+	mux5to1_3bit mux0( .d0(SW[2:0]), .d1(SW[14:12]), .d2(SW[11:9]), .d3(SW[8:6]), .d4(SW[5:3]), .s(SW[17:15]), .out(m0));
+	hex7seg h0 (.c(m0), .display(HEX0));
+endmodule

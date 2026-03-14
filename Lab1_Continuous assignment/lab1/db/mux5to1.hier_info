@@ -1,0 +1,156 @@
+|mux5to1
+d0[0] => d0[0]~2.IN1
+d0[1] => d0[1]~1.IN1
+d0[2] => d0[2]~0.IN1
+d1[0] => d1[0]~2.IN1
+d1[1] => d1[1]~1.IN1
+d1[2] => d1[2]~0.IN1
+d2[0] => d2[0]~2.IN1
+d2[1] => d2[1]~1.IN1
+d2[2] => d2[2]~0.IN1
+d3[0] => d3[0]~2.IN1
+d3[1] => d3[1]~1.IN1
+d3[2] => d3[2]~0.IN1
+d4[0] => d4[0]~2.IN1
+d4[1] => d4[1]~1.IN1
+d4[2] => d4[2]~0.IN1
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+out[0] <= mux5to1_1bit:bit0.out
+out[1] <= mux5to1_1bit:bit1.out
+out[2] <= mux5to1_1bit:bit2.out
+
+
+|mux5to1|mux5to1_1bit:bit0
+d[0] => d[0]~4.IN1
+d[1] => d[1]~3.IN1
+d[2] => d[2]~2.IN1
+d[3] => d[3]~1.IN1
+d[4] => d[4]~0.IN1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+out <= mux2to1:m20.m
+
+
+|mux5to1|mux5to1_1bit:bit0|mux2to1:m01
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit0|mux2to1:m02
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit0|mux2to1:m10
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit0|mux2to1:m20
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit1
+d[0] => d[0]~4.IN1
+d[1] => d[1]~3.IN1
+d[2] => d[2]~2.IN1
+d[3] => d[3]~1.IN1
+d[4] => d[4]~0.IN1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+out <= mux2to1:m20.m
+
+
+|mux5to1|mux5to1_1bit:bit1|mux2to1:m01
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit1|mux2to1:m02
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit1|mux2to1:m10
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit1|mux2to1:m20
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit2
+d[0] => d[0]~4.IN1
+d[1] => d[1]~3.IN1
+d[2] => d[2]~2.IN1
+d[3] => d[3]~1.IN1
+d[4] => d[4]~0.IN1
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+out <= mux2to1:m20.m
+
+
+|mux5to1|mux5to1_1bit:bit2|mux2to1:m01
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit2|mux2to1:m02
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit2|mux2to1:m10
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux5to1|mux5to1_1bit:bit2|mux2to1:m20
+x => m~0.IN0
+y => m~1.IN0
+s => m~1.IN1
+s => m~0.IN1
+m <= m~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

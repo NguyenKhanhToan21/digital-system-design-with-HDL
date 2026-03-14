@@ -1,0 +1,10 @@
+module hex7seg(
+	input [2:0] c,
+	input [6:0] display
+);
+	assign display = (c == 3'b000) ? (7'b1110110):	//H
+						  (c == 3'b001) ? (7b'1111001):	//E
+						  (c == 3'b010) ? (7'b0111000):	//L
+						  (c == 3'b011) ? (7'b0111000):	//L
+						  (c == 3'b100) ? (7'b0111111);	//O
+endmodule
