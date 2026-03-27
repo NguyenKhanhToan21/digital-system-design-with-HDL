@@ -1,0 +1,15 @@
+module synchronous_counter (
+	input Enable, Clock, Clear,
+	output [3:0] Q
+);
+	wire [3:0] t;
+	assign t[0] = Enable;
+	assign t[1] = Enable & Q[0];
+	assign t[2] = t[1] & Q[1];
+	assign t[3] = t[2] & Q[2];
+	
+	t_ff t1 (.CLK(Clock), .Clear(Clear), .T(t[0]), .Q(Q[0]));
+	t_ff t2 (.CLK(Clock), .Clear(Clear), .T(t[1]), .Q(Q[1]));
+	t_ff t3 (.CLK(Clock), .Clear(Clear), .T(t[2]), .Q(Q[2]));
+	t_ff t4 (.CLK(Clock), .Clear(Clear), .T(t[3]), .Q(Q[3]));
+endmodule

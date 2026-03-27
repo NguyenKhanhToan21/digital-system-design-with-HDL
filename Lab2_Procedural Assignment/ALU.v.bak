@@ -1,0 +1,31 @@
+module ALU (
+	input [31:0] A;
+	input [31:0] B;
+	input [2:0] sel;
+	output reg [31:0] C
+);
+	assign overflow = (A[31] == B[31]) && (Sum[31] != A[31]);
+	always @(*)	begin 
+		if (A[31] == 1'b1) begin 
+			A <= ~A + 1'b1;
+			end 
+			else if (B[31] == 1'b1) begin 
+				B<= ~B + 1'b1;
+				end 
+				else if (A[31] == 1'b1 && B[31] == 1'b1 ) begin 
+					A <= ~A + 1'b1;
+					B<= ~B + 1'b1;
+					end 
+					
+		case (sel)
+			3'b000 : C = ~A;
+			3'b001 : C = A & B;
+			3'b010 : C = A ^ B;
+			3'b011 : C = A | B;
+			3'b100 : C = A - 32'd1;
+			3'b101 : C = A + B;
+			3'b110 : C = A - B;
+			3'b111 : C = A + 32'd1;
+			default : C = 32'd0;
+		endcase
+endmodule 

@@ -1,0 +1,40 @@
+module scroll_hex7seg_1(
+	input [1:0] KEY,
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7
+);
+
+	reg [6:0] HEX_reg [7:0];
+	reg [6:0] temp;
+	integer i;
+
+	assign HEX0 = HEX_reg[0];
+	assign HEX1 = HEX_reg[1];
+	assign HEX2 = HEX_reg[2];
+	assign HEX3 = HEX_reg[3];
+	assign HEX4 = HEX_reg[4];
+	assign HEX5 = HEX_reg[5];
+	assign HEX6 = HEX_reg[6];
+	assign HEX7 = HEX_reg[7];
+
+	always @(posedge KEY[0] or negedge KEY[1]) begin 
+	if(!KEY[1]) begin 
+		// ___HELLO
+		HEX_reg[7] <= 7'b1111111;
+		HEX_reg[6] <= 7'b1111111;
+		HEX_reg[5] <= 7'b1111111;
+		HEX_reg[4] <= 7'b0001001; // H
+		HEX_reg[3] <= 7'b0000110; // E
+		HEX_reg[2] <= 7'b1000111; // L
+		HEX_reg[1] <= 7'b1000111; // L
+		HEX_reg[0] <= 7'b1000000; // O
+	end 
+	else begin 
+	temp = HEX_reg[7];
+		for (i = 7; i > 0; i = i - 1) begin 
+			HEX_reg[i] <= HEX_reg[i-1];
+		end 
+
+		HEX_reg[0] <= temp;
+	end 
+end
+endmodule

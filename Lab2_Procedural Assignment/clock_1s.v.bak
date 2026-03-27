@@ -1,0 +1,18 @@
+module clock_1s (
+	input CLOCK_50, reset
+	output reg clock1s
+);
+	reg counter = 0;
+	always @(posedge CLOCK_50 or negedge reset) begin 
+		if (!reset) begin 
+			clock1s <= 1'b0;
+			end
+		else if (counter != 26'd50000000) begin 
+			counter <= counter + 26'd1;
+			end
+		else begin 
+			counter <= 26'd0;
+			clock1s <= ~clock1s;
+		end
+	end 
+endmodule
