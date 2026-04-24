@@ -1,0 +1,29 @@
+Thu Apr 23 7:16:49 PM SE Asia Standard Time 2026
+Trace back: couldn't open "E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v": no such file or directory
+    while executing
+"open $name w+"
+    (procedure "Project::applyCreateSrcFile" line 42)
+    invoked from within
+"Project::applyCreateSrcFile .creates 0"
+    invoked from within
+".creates.bb.button0 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "::tk::ButtonInvoke" line 9)
+    invoked from within
+"::tk::ButtonInvoke $ok"
+    ("Entry" arm line 7)
+    invoked from within
+"switch [winfo class $foc] {
+         Text {
+            return 1 ;# Text widget, don't do anything
+         }
+         Entry {
+            # For entry..."
+    (procedure "MtiDialog::privHandleEnter" line 14)
+    invoked from within
+"MtiDialog::privHandleEnter .creates.bb.button0"
+    (command bound to event)
+  <2: ::tkerror {couldn't open "E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v": no such file or directory}
+  <1: ::bgerror {couldn't open "E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v": no such file or directory}

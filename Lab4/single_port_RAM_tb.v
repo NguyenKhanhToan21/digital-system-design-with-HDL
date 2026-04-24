@@ -1,0 +1,114 @@
+`timescale 1ns/1ps
+
+module tb_single_port_RAM;
+
+  reg CLK;
+  reg cs, wr_e, oe;
+  reg [6:0] addr;
+
+  wire [7:0] data;      // inout t? DUT
+  reg  [7:0] data_drv;  // testbench drive
+
+  // =========================
+  // TRI-STATE CONTROL
+  // =========================
+  assign data = (cs && wr_e) ? data_drv : 8'bz;
+
+  // =========================
+  // DUT
+  // =========================
+  single_port_RAM uut ( .CLK(CLK), .cs(cs), .wr_e(wr_e), .oe(oe), .addr(addr), .data(data));
+
+  // =========================
+  // CLOCK
+  // =========================
+  initial CLK = 0;
+  always #5 CLK = ~CLK;
+
+  // =========================
+  // MONITOR
+  // =========================
+  initial begin
+    $monitor("Time=%0t | cs=%b wr_e=%b oe=%b | addr=%0d | data=%h",
+              $time, cs, wr_e, oe, addr, data);
+  end
+
+  // =========================
+  // STIMULUS
+  // =========================
+  initial begin
+    // Init
+    cs = 0;
+    wr_e = 0;
+    oe = 0;
+    addr = 0;
+    data_drv = 0;
+
+    // -------------------------
+    // Test 1: Write RAM[10]
+    // -------------------------
+    @(negedge CLK);
+    cs = 1;
+    wr_e = 1;
+    oe = 0;
+    addr = 10;
+    data_drv = 8'hAA;
+
+    @(posedge CLK); // ghi
+
+    // -------------------------
+    // Test 2: Read RAM[10]
+    // -------------------------
+    @(negedge CLK);
+    wr_e = 0;
+    oe = 1;
+    addr = 10;
+
+    @(posedge CLK); // ??c
+
+    // -------------------------
+    // Test 3: Write nhi?u ??a ch?
+    // -------------------------
+    @(negedge CLK);
+    wr_e = 1; oe = 0;
+
+    addr = 20; data_drv = 8'h11;
+    @(posedge CLK);
+
+    @(negedge CLK);
+    addr = 21; data_drv = 8'h22;
+    @(posedge CLK);
+
+    @(negedge CLK);
+    addr = 22; data_drv = 8'h33;
+    @(posedge CLK);
+
+    // -------------------------
+    // Test 4: Read nhi?u ??a ch?
+    // -------------------------
+    @(negedge CLK);
+    wr_e = 0; oe = 1;
+
+    addr = 20; @(posedge CLK);
+    @(negedge CLK); addr = 21; @(posedge CLK);
+    @(negedge CLK); addr = 22; @(posedge CLK);
+
+    // -------------------------
+    // Test 5: Disable output
+    // -------------------------
+    @(negedge CLK);
+    oe = 0;  // output disable ? data = Z
+    @(posedge CLK);
+
+    // -------------------------
+    // Test 6: cs = 0 (chip disable)
+    // -------------------------
+    @(negedge CLK);
+    cs = 0;
+    @(posedge CLK);
+
+    #20;
+    $stop;
+  end
+
+endmodule

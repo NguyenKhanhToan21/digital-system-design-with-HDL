@@ -1,0 +1,160 @@
+|SRAM_Interface
+SW[0] => SRAM_DQ[0].DATAIN
+SW[1] => SRAM_DQ[1].DATAIN
+SW[2] => SRAM_DQ[2].DATAIN
+SW[3] => SRAM_DQ[3].DATAIN
+SW[4] => SRAM_DQ[4].DATAIN
+SW[5] => SRAM_DQ[5].DATAIN
+SW[6] => SRAM_DQ[6].DATAIN
+SW[7] => SRAM_DQ[7].DATAIN
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+SW[10] => SW[10].IN1
+SW[11] => SW[11].IN1
+SW[12] => SW[12].IN1
+SW[13] => SW[13].IN1
+SW[14] => SW[14].IN1
+SW[15] => SW[15].IN1
+KEY[0] => SRAM_OE_N.DATAIN
+KEY[1] => SRAM_WE_N.DATAIN
+KEY[1] => SRAM_DQ[0].OE
+KEY[1] => SRAM_DQ[1].OE
+KEY[1] => SRAM_DQ[2].OE
+KEY[1] => SRAM_DQ[3].OE
+KEY[1] => SRAM_DQ[4].OE
+KEY[1] => SRAM_DQ[5].OE
+KEY[1] => SRAM_DQ[6].OE
+KEY[1] => SRAM_DQ[7].OE
+KEY[1] => SRAM_DQ[8].OE
+KEY[1] => SRAM_DQ[9].OE
+KEY[1] => SRAM_DQ[10].OE
+KEY[1] => SRAM_DQ[11].OE
+KEY[1] => SRAM_DQ[12].OE
+KEY[1] => SRAM_DQ[13].OE
+KEY[1] => SRAM_DQ[14].OE
+KEY[1] => SRAM_DQ[15].OE
+HEX0[0] <= hex7seg:h0.hex
+HEX0[1] <= hex7seg:h0.hex
+HEX0[2] <= hex7seg:h0.hex
+HEX0[3] <= hex7seg:h0.hex
+HEX0[4] <= hex7seg:h0.hex
+HEX0[5] <= hex7seg:h0.hex
+HEX0[6] <= hex7seg:h0.hex
+HEX1[0] <= hex7seg:h1.hex
+HEX1[1] <= hex7seg:h1.hex
+HEX1[2] <= hex7seg:h1.hex
+HEX1[3] <= hex7seg:h1.hex
+HEX1[4] <= hex7seg:h1.hex
+HEX1[5] <= hex7seg:h1.hex
+HEX1[6] <= hex7seg:h1.hex
+HEX2[0] <= hex7seg:h2.hex
+HEX2[1] <= hex7seg:h2.hex
+HEX2[2] <= hex7seg:h2.hex
+HEX2[3] <= hex7seg:h2.hex
+HEX2[4] <= hex7seg:h2.hex
+HEX2[5] <= hex7seg:h2.hex
+HEX2[6] <= hex7seg:h2.hex
+HEX3[0] <= hex7seg:h3.hex
+HEX3[1] <= hex7seg:h3.hex
+HEX3[2] <= hex7seg:h3.hex
+HEX3[3] <= hex7seg:h3.hex
+HEX3[4] <= hex7seg:h3.hex
+HEX3[5] <= hex7seg:h3.hex
+HEX3[6] <= hex7seg:h3.hex
+SRAM_ADDR[0] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[1] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[2] <= SW[10].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[3] <= SW[11].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[4] <= SW[12].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[5] <= SW[13].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[6] <= SW[14].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[7] <= SW[15].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_ADDR[8] <= <GND>
+SRAM_ADDR[9] <= <GND>
+SRAM_ADDR[10] <= <GND>
+SRAM_ADDR[11] <= <GND>
+SRAM_ADDR[12] <= <GND>
+SRAM_ADDR[13] <= <GND>
+SRAM_ADDR[14] <= <GND>
+SRAM_ADDR[15] <= <GND>
+SRAM_ADDR[16] <= <GND>
+SRAM_ADDR[17] <= <GND>
+SRAM_DQ[0] <> SRAM_DQ[0]
+SRAM_DQ[1] <> SRAM_DQ[1]
+SRAM_DQ[2] <> SRAM_DQ[2]
+SRAM_DQ[3] <> SRAM_DQ[3]
+SRAM_DQ[4] <> SRAM_DQ[4]
+SRAM_DQ[5] <> SRAM_DQ[5]
+SRAM_DQ[6] <> SRAM_DQ[6]
+SRAM_DQ[7] <> SRAM_DQ[7]
+SRAM_DQ[8] <> SRAM_DQ[8]
+SRAM_DQ[9] <> SRAM_DQ[9]
+SRAM_DQ[10] <> SRAM_DQ[10]
+SRAM_DQ[11] <> SRAM_DQ[11]
+SRAM_DQ[12] <> SRAM_DQ[12]
+SRAM_DQ[13] <> SRAM_DQ[13]
+SRAM_DQ[14] <> SRAM_DQ[14]
+SRAM_DQ[15] <> SRAM_DQ[15]
+SRAM_OE_N <= KEY[0].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_WE_N <= KEY[1].DB_MAX_OUTPUT_PORT_TYPE
+SRAM_CE_N <= <GND>
+SRAM_LB_N <= <GND>
+SRAM_UB_N <= <GND>
+
+
+|SRAM_Interface|hex7seg:h0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SRAM_Interface|hex7seg:h1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SRAM_Interface|hex7seg:h2
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SRAM_Interface|hex7seg:h3
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+hex[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

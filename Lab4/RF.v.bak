@@ -1,0 +1,17 @@
+module RF (
+  input [4:0] ReadAddress1, ReadAddress2, WriteAdress,
+  input [31:0] WriteData,
+  input WriteEn, CLK,
+  output [31:0]  ReadData1, ReadData2
+);
+  reg [31:0] RegisterFile [31:0];
+  
+  assign ReadData1 = RegisterFile[ReadAddress1];
+  assign ReadData2 = RegisterFile[ReadAddress2];
+  
+  always @(posedge CLK) begin 
+    if(WriteEn) begin 
+      RegisterFile(WriteAddress) <= WriteData;
+    end 
+  end
+endmodule 

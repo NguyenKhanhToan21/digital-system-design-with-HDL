@@ -1,0 +1,78 @@
+E:/UIT/HDL/LAB/Lab4/RF.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/RF.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/Counter_4bit.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/Counter_4bit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Counter_4bit
+
+Top level modules:
+	Counter_4bit
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_single_port_RAM
+
+Top level modules:
+	tb_single_port_RAM
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/RF_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/RF_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RF_tb
+
+Top level modules:
+	RF_tb
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/single_port_RAM.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/single_port_RAM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module single_port_RAM
+
+Top level modules:
+	single_port_RAM
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dual_port_RAM_tb
+
+Top level modules:
+	dual_port_RAM_tb
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Counter_4bit_tb
+
+Top level modules:
+	Counter_4bit_tb
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/dual_port_RAM.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/dual_port_RAM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dual_port_RAM
+
+Top level modules:
+	dual_port_RAM
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_ALU_32bit
+
+Top level modules:
+	tb_ALU_32bit
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Counter_4bit_tb_sc
+
+Top level modules:
+	Counter_4bit_tb_sc
+
+} {} {}} E:/UIT/HDL/LAB/Lab4/ALU_32bit.v {1 {vlog -work work {E:\UIT\HDL\LAB\Lab4\ALU_32bit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU_32bit
+
+Top level modules:
+	ALU_32bit
+
+} {} {}}

@@ -1,0 +1,245 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab3\simulation\modelsim
+vALU_32bit
+Z1 IM_5e?m:A?S_LAh@VRlkf40
+Z2 ViY4`Ejlk?0:@UYRcaka0<3
+Z3 dE:\UIT\HDL\LAB\Lab4
+Z4 w1776943142
+Z5 8E:\UIT\HDL\LAB\Lab4\ALU_32bit.v
+Z6 FE:\UIT\HDL\LAB\Lab4\ALU_32bit.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@a@l@u_32bit
+Z10 !s100 VFJVLkgWS]UFN;9gzCHaG2
+Z11 !s108 1776947643.733000
+Z12 !s107 E:\UIT\HDL\LAB\Lab4\ALU_32bit.v|
+Z13 !s90 -reportprogress|300|-work|work|E:\UIT\HDL\LAB\Lab4\ALU_32bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounter_4bit
+Z14 IHQVM<m4g^?]mLC1<J_l_I2
+Z15 VR>c0Ig?Djl<W=HimcREiT1
+R3
+Z16 w1776997717
+Z17 8E:/UIT/HDL/LAB/Lab4/Counter_4bit.v
+Z18 FE:/UIT/HDL/LAB/Lab4/Counter_4bit.v
+L0 1
+R7
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/Counter_4bit.v|
+R8
+Z20 n@counter_4bit
+Z21 !s100 AK=5<1SB_ClF?P[Y0lfdO2
+Z22 !s108 1776997748.091000
+Z23 !s107 E:/UIT/HDL/LAB/Lab4/Counter_4bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounter_4bit_tb
+Z24 !s100 37FBlWVP6I`JaCcFc>l;81
+Z25 I3X@[Yk;8Abm]BJGlgz@J40
+Z26 VWcQe>oL7JcOhbbCzWT<^E0
+R3
+Z27 w1776946387
+Z28 8E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v
+Z29 FE:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v
+L0 3
+R7
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v|
+R8
+Z31 n@counter_4bit_tb
+Z32 !s108 1776947644.002000
+Z33 !s107 E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounter_4bit_tb_sc
+Z34 IhfK4JjQ<MajOlbVzo`R?a1
+Z35 VUS_54DghB`^6;:4GzKVb_2
+R3
+Z36 w1776997537
+Z37 8E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v
+Z38 FE:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v
+L0 3
+R7
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v|
+R8
+Z40 n@counter_4bit_tb_sc
+Z41 !s100 0LWmmRQ3PL@07CcNYAd];0
+Z42 !s108 1776997569.330000
+Z43 !s107 E:/UIT/HDL/LAB/Lab4/Counter_4bit_tb_sc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdual_port_RAM
+Z44 I_iW8_51Ii3KOB_KikWb1g0
+Z45 Vi>h5RYfBH2R<:Q]8nYkLV1
+R3
+Z46 w1776950273
+Z47 8E:/UIT/HDL/LAB/Lab4/dual_port_RAM.v
+Z48 FE:/UIT/HDL/LAB/Lab4/dual_port_RAM.v
+L0 1
+R7
+r1
+31
+R8
+Z49 ndual_port_@r@a@m
+Z50 !s100 jVP3EgdPQz5Lh`MGUZlm03
+Z51 !s108 1776950293.705000
+Z52 !s107 E:/UIT/HDL/LAB/Lab4/dual_port_RAM.v|
+Z53 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/dual_port_RAM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdual_port_RAM_tb
+Z54 !s100 CC38MA>eTPo]U_C5>P9NA0
+Z55 IK[DB6RWz_@1K4UKUX5JO;0
+Z56 V[5BPn8X>D[g=;<zd_5zhk0
+R3
+Z57 w1776952392
+Z58 8E:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v
+Z59 FE:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v
+L0 3
+R7
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v|
+R8
+Z61 ndual_port_@r@a@m_tb
+Z62 !s108 1776961751.951000
+Z63 !s107 E:/UIT/HDL/LAB/Lab4/dual_port_RAM_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRF
+Z64 IFdZYf4G7E9zQN5Ul:kR5J0
+Z65 V:iO9d_gV:[G@PoPCMGGEn0
+R3
+Z66 w1776948297
+Z67 8E:/UIT/HDL/LAB/Lab4/RF.v
+Z68 FE:/UIT/HDL/LAB/Lab4/RF.v
+L0 1
+R7
+r1
+31
+R8
+n@r@f
+Z69 !s100 ?hfTbYJc:cPVVF6nMTVho3
+Z70 !s108 1776948301.154000
+Z71 !s107 E:/UIT/HDL/LAB/Lab4/RF.v|
+Z72 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/RF.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRF_tb
+Z73 !s100 G?5kPj<0g5j;c=LK30KYV2
+Z74 IeQHG?aE`6mYPJX3m_;a511
+Z75 VoHNMJkOk8XhIJ8Pha;<Fg3
+R3
+Z76 w1776999635
+Z77 8E:/UIT/HDL/LAB/Lab4/RF_tb.v
+Z78 FE:/UIT/HDL/LAB/Lab4/RF_tb.v
+L0 3
+R7
+r1
+31
+Z79 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/RF_tb.v|
+R8
+Z80 n@r@f_tb
+Z81 !s108 1777000257.647000
+Z82 !s107 E:/UIT/HDL/LAB/Lab4/RF_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsingle_port_RAM
+Z83 IJDjKfKJdO>oaE9Wn6<;LK2
+Z84 VYaNR8:gFn:Qb2N6IYjn7C2
+R3
+Z85 w1776961730
+Z86 8E:/UIT/HDL/LAB/Lab4/single_port_RAM.v
+Z87 FE:/UIT/HDL/LAB/Lab4/single_port_RAM.v
+L0 1
+R7
+r1
+31
+R8
+Z88 nsingle_port_@r@a@m
+Z89 !s100 dmMK1mL37@MKOGm?=2YEU1
+Z90 !s108 1776961745.313000
+Z91 !s107 E:/UIT/HDL/LAB/Lab4/single_port_RAM.v|
+Z92 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/single_port_RAM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_ALU_32bit
+Z93 IiR;E_jJPA;6SMV^XdU60W1
+Z94 VRB<?WR4LV?PL]_4^Ah9751
+R3
+Z95 w1776994763
+Z96 8E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+Z97 FE:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+L0 3
+R7
+r1
+31
+Z98 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v|
+R8
+Z99 ntb_@a@l@u_32bit
+Z100 !s100 WdG:9CB=b>MEIG=X?`1KQ3
+Z101 !s108 1776994847.674000
+Z102 !s107 E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_single_port_RAM
+Z103 I3c5DW3hlg?]Qbo7VWC_[42
+Z104 VLLR6774V_JCNX:HUiY;0S2
+R3
+Z105 w1776962048
+Z106 8E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v
+Z107 FE:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v
+L0 3
+R7
+r1
+31
+R8
+Z108 ntb_single_port_@r@a@m
+Z109 !s100 C^lIRef7<T0?4nO8UYE262
+Z110 !s108 1776962061.427000
+Z111 !s107 E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v|
+Z112 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_single_port_RAM_sc
+!i10b 1
+Z113 !s100 3dN[R_;U4Yob0LQ?EHA9[0
+Z114 I@26h`5:GG<Fok:FkFAUP`2
+Z115 V2RhmLgFgZ1UobSPo3Ei2z0
+R3
+w1777001456
+Z116 8E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb_sc.v
+Z117 FE:/UIT/HDL/LAB/Lab4/single_port_RAM_tb_sc.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1777001459.421000
+!s107 E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb_sc.v|
+Z118 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab4/single_port_RAM_tb_sc.v|
+!s101 -O0
+R8
+Z119 ntb_single_port_@r@a@m_sc
