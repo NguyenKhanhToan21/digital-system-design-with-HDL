@@ -1,0 +1,192 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+vALU
+Z1 !s100 :<K`EYYAIeA?oUVmMFzS23
+I2NCF:AAg3<<D?KP2?361k3
+Z2 V@Mg3IzK6_LbZMEYm;z5Nz2
+Z3 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+Z4 w1773900842
+Z5 8E:/UIT/HDL/LAB/Lab5/ALU.v
+Z6 FE:/UIT/HDL/LAB/Lab5/ALU.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-vlog01compat -work work -O0
+Z9 !s92 -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 -O0
+Z10 n@a@l@u
+Z11 !s107 E:/UIT/HDL/LAB/Lab5/ALU.v|
+!i10b 1
+!s85 0
+!s108 1778814774.106000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/ALU.v|
+!s101 -O0
+vControlUnit
+Z12 !s100 4JBl8=DC6G6LDN<KdCCCJ0
+I6E<mn5e1i7Ji0EI5z>Ye>3
+Z13 V7X@P<hG=6:;VIbIP7cUfT2
+R3
+Z14 w1778812663
+Z15 8E:/UIT/HDL/LAB/Lab5/ControlUnit.v
+Z16 FE:/UIT/HDL/LAB/Lab5/ControlUnit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z17 n@control@unit
+Z18 !s107 E:/UIT/HDL/LAB/Lab5/ControlUnit.v|
+!i10b 1
+!s85 0
+!s108 1778814774.209000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/ControlUnit.v|
+!s101 -O0
+vDatapath
+I]gSEgF?R1lOYe0Z4C[Mb82
+VcNQO6Og__Ec1m^7d98`V00
+R3
+w1778814635
+Z19 8E:/UIT/HDL/LAB/Lab5/Datapath.v
+Z20 FE:/UIT/HDL/LAB/Lab5/Datapath.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z21 n@datapath
+Z22 !s107 E:/UIT/HDL/LAB/Lab5/Datapath.v|
+!i10b 1
+!s100 [DPW1c`;i03<I]noz?2J`2
+!s85 0
+!s108 1778814774.142000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/Datapath.v|
+!s101 -O0
+vdual_port_RAM
+IS>;7zTcJdDe>Ci9_`YdnI0
+Z23 V^m]A2ZB4AfMMO6IzPnDH92
+R3
+Z24 w1778811012
+8E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v
+FE:/UIT/HDL/LAB/Lab5/dual_port_RAM.v
+L0 1
+R7
+r1
+31
+R8
+Z25 ndual_port_@r@a@m
+R9
+!i10b 1
+!s100 fG371Z;^cmTm6jbaRJfLT2
+!s85 0
+!s108 1778814774.002000
+!s107 E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v|
+!s101 -O0
+vMIPS_CPU
+I65CNAI_aQJRb[z7ULLDgI2
+VZ9a99geN2i^Pm7HXk=XZc0
+R3
+w1778814669
+Z26 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V
+Z27 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU.V
+L0 1
+R7
+r1
+31
+R8
+R9
+Z28 n@m@i@p@s_@c@p@u
+!i10b 1
+!s100 X1JGh=cVVKfk2Km<c_1]`0
+!s85 0
+!s108 1778814774.244000
+Z29 !s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V|
+!s101 -O0
+vMIPS_CPU_tb
+!i10b 1
+!s100 mNK<[:A^S@EKY:^IRUm3e0
+I_PChgE7>[>fBIOIL`M7mO2
+Z30 VlI7kT`nljJeZ7Lj8fDUgd3
+R3
+w1778814767
+Z31 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+Z32 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1778814774.275000
+!s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+!s101 -O0
+R8
+R9
+Z33 n@m@i@p@s_@c@p@u_tb
+vmux_32bit
+Z34 !s100 YX8TC0dN[[So=SFbcIeA72
+IGP`0RPUUD018h2mZ4R=zm1
+Z35 VmmCK2oPX^`fZ=ZiE:VlEM2
+R3
+Z36 w1778151096
+Z37 8E:/UIT/HDL/LAB/Lab5/mux_32bit.v
+Z38 FE:/UIT/HDL/LAB/Lab5/mux_32bit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z39 !s107 E:/UIT/HDL/LAB/Lab5/mux_32bit.v|
+!i10b 1
+!s85 0
+!s108 1778814774.174000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/mux_32bit.v|
+!s101 -O0
+vmux_5bit
+Z40 !s100 WIh>>]9Elac@=AN[Hc0YO2
+IOnbn_F@Be5Zho`KWW@>IN2
+Z41 VdTH^MJoeUA^=k5odNobi?3
+R3
+Z42 w1778149931
+Z43 8E:/UIT/HDL/LAB/Lab5/mux_5bit.v
+Z44 FE:/UIT/HDL/LAB/Lab5/mux_5bit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z45 !s107 E:/UIT/HDL/LAB/Lab5/mux_5bit.v|
+!i10b 1
+!s85 0
+!s108 1778814774.039000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/mux_5bit.v|
+!s101 -O0
+vRF
+Z46 !s100 G[Zi=WJE4>i_6J>R8EWTE2
+IU3k>4YzLQHG6;M7?jNE1`0
+Z47 V:iO9d_gV:[G@PoPCMGGEn0
+R3
+Z48 w1778812992
+Z49 8E:/UIT/HDL/LAB/Lab5/RF.v
+Z50 FE:/UIT/HDL/LAB/Lab5/RF.v
+L0 1
+R7
+r1
+31
+R8
+R9
+n@r@f
+Z51 !s107 E:/UIT/HDL/LAB/Lab5/RF.v|
+!i10b 1
+!s85 0
+!s108 1778814774.074000
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/RF.v|
+!s101 -O0

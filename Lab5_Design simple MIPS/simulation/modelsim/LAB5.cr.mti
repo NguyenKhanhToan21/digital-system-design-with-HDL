@@ -1,0 +1,78 @@
+E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MIPS_CPU_tb
+
+Top level modules:
+	MIPS_CPU_tb
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/mux_32bit.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/mux_32bit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux_32bit
+
+Top level modules:
+	mux_32bit
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/mux_5bit.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/mux_5bit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux_5bit
+
+Top level modules:
+	mux_5bit
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dual_port_RAM
+
+Top level modules:
+	dual_port_RAM
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/ControlUnit.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/ControlUnit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/ALU.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/Datapath.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/Datapath.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Datapath
+
+Top level modules:
+	Datapath
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MIPS_CPU_tb2
+
+Top level modules:
+	MIPS_CPU_tb2
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MIPS_CPU
+
+Top level modules:
+	MIPS_CPU
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/Datapath_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/Datapath_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Datapath_tb
+
+Top level modules:
+	Datapath_tb
+
+} {} {}} E:/UIT/HDL/LAB/Lab5/RF.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab5/RF.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}}

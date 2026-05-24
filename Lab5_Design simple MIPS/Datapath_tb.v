@@ -1,0 +1,96 @@
+`timescale 1ns/1ps 
+module Datapath_tb;
+  reg [4:0] rs, rt, rd;
+  reg [15:0] imm16;
+  reg CLK;
+  
+  reg RegDst, ALUSrc, MemToReg, MemWrite, MemRead, RegWrite;
+  reg [2:0] ALUcontrol;
+  
+  wire [31:0] ALU_result, WriteData_RF;
+  wire is0;
+  
+  Datapath dut ( .rs(rs), .rt(rt), .rd(rd), .imm16(imm16), .CLK(CLK), .RegDst(RegDst), .ALUSrc(ALUSrc), .MemToReg(MemToReg), .MemWrite(MemWrite), .MemRead(MemRead), .RegWrite(RegWrite),
+                 .ALUcontrol(ALUcontrol), .ALU_result(ALU_result), .WriteData_RF(WriteData_RF), .is0(is0));
+  
+  initial CLK = 0;
+  always #5 CLK = ~CLK;
+   
+  initial begin 
+    dut.u1.RegisterFile[2] = 32'd10;
+    dut.u1.RegisterFile[3] = 32'd5;
+    //Init 
+    rs = 0;
+    rt = 0;
+    rd = 0;
+    imm16 = 0;
+    RegDst = 0;
+    ALUSrc = 0;
+    MemToReg = 0;
+    MemWrite = 0;
+    MemRead = 0;
+    RegWrite = 0;
+   @(posedge CLK);
+    
+    //Test1: add $s1, $s2, $s3
+    $display("Test1: add $s1, $s2, $s3");
+    @(negedge CLK);
+    rs = 5'b00010;
+    rt = 5'b00011;
+    rd = 5'b00001;
+    imm16 = 16'd0;
+    RegDst = 1'b1;
+    RegWrite = 1'b1;
+    ALUSrc = 1'b0;
+    ALUcontrol = 3'b101;
+    MemWrite = 1'b0;
+    MemRead = 1'b0;
+    MemToReg = 1'b0;
+    
+    @(posedge CLK);
+    #1;
+    $display("ALU_result = %0d, WriteData_RF = %0d, is0 = %0b", ALU_result, WriteData_RF, is0);
+    
+    //Test2: lw $1, 0($2)
+    $display("lw $1, 0($2)");
+    @(negedge CLK);
+    dut.u5.RAM[10] = 32'd123;
+    rs = 5'b00010;
+    rt = 5'b00001;
+    rd = 5'b00000;
+    imm16 = 16'd0;
+    RegDst = 1'b0;
+    ALUSrc = 1'b1;
+    ALUcontrol = 3'b101;
+    MemWrite = 1'b0;
+    MemRead = 1'b1;
+    MemToReg = 1'b1;
+    RegWrite = 1'b1;
+    @(posedge CLK);
+    #1;
+    $display("ALU_result = %0d, WriteData_RF = %0d, is0 = %0b", ALU_result, WriteData_RF, is0);
+    //Test3: sw $1, 0($2)
+    $display("sw $1, 0($2)");
+    @(negedge CLK);
+    dut.u1.RegisterFile[2] = 32'd10;
+    dut.u1.RegisterFile[1] = 32'd123;
+    rs = 5'b00010;
+    rt = 5'b00001;
+    imm16 = 16'd0;
+    RegDst = 1'bx;
+    ALUSrc = 1'b1;
+    MemToReg = 1'bx;
+    RegWrite = 1'b0;
+    MemRead = 1'b0;
+    MemWrite = 1'b1;
+    ALUcontrol = 3'b101;
+    
+    @(posedge CLK);
+    #1;
+    $display("ALU_result = %0d, WriteData_RF = %0d, is0 = %0b", ALU_result, WriteData_RF, is0); 
+    $display("RAM[10] = %0d", dut.u5.RAM[10]);   
+    $stop; 
+  end 
+endmodule
+    
+

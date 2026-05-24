@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v}
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/mux_5bit.v}
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/RF.v}
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/ALU.v}
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/Datapath.v}
+vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 {E:/UIT/HDL/LAB/Lab5/mux_32bit.v}
+

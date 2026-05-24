@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+vMIPS_CPU
+Ig^o8?DY3<lkd_aJoJ^ZzN3
+Z1 VZ9a99geN2i^Pm7HXk=XZc0
+Z2 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+w1778816582
+8LAB5.vo
+FLAB5.vo
+L0 31
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 n@m@i@p@s_@c@p@u
+!i10b 1
+!s100 F6mT=:B1G`MNk^NWU0jeD1
+!s85 0
+!s108 1778816669.054000
+!s107 LAB5.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|LAB5.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vMIPS_CPU_tb
+!i10b 1
+Z6 !s100 @X3SbAeOgF7MAU4@H4FgK2
+IEmeNQ_PQ7jGdXJ09=E6NH2
+Z7 VlI7kT`nljJeZ7Lj8fDUgd3
+R2
+Z8 w1778816400
+Z9 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+Z10 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1778816670.012000
+!s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab5|E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+!s101 -O0
+R4
+!s92 -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab5 -O0
+Z11 n@m@i@p@s_@c@p@u_tb

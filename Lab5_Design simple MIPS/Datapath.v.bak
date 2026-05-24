@@ -1,0 +1,37 @@
+module Datapath (
+	input [4:0] rs, rt, rd,
+	input [15:0] imm16, //shamt, funct
+	input CLK,
+	
+	input         RegDst,      // 0=rt (lw), 1=rd (add)
+   input         ALUSrc,      // 0=RF_out2, 1=Imm32
+   input  [2:0]  ALUcontrol,  // 3'b101 = ADD
+   input         MemToReg,    // 0=ALU_result, 1=RAM_data
+   input         MemWrite,    // 1 = ghi RAM (sw)
+   input         MemRead,     // 1 = đọc RAM (lw)
+	input 		  RegWrite, 
+	
+	output [31:0] ALU_result, WriteData_RF,
+	output is0 
+);
+	wire [31:0] Imm32;
+	assign Imm32 = {{16{imm16[15]}},imm16};
+	
+	wire [4:0] WriteAddress;
+	mux_5bit u0 (.A(rt), .B(rd), .sel(RegDst), .C(WriteAddress));
+	
+	wire [31:0] ReadData1, ReadData2;
+	wire [31:0] WriteData_int;   // nối MUX → RF.WriteData, đồng thời ra output
+   assign WriteData_RF = WriteData_int;
+	RF u1 (.ReadAddress1(rs), .ReadAddress2(rt), .WriteAddress(WriteAddress), .WriteData(WriteData_int), .WriteEn(RegWrite), .CLK(CLK), .ReadData1(ReadData1), .ReadData2(ReadData2));
+	
+	wire [31:0] ALU_B;
+	mux_32bit u2 (.A(ReadData2), .B(Imm32), .sel(ALUSrc), .C(ALU_B));
+	
+	ALU u3 (.A(ReadData1), .B(ALU_B), .sel(ALUcontrol), .C(ALU_result), .over_flow(is0));
+	
+	mux_32bit u4 (.A (ALU_result), .B(RAM_ReadData), .sel(MemToReg), .C(WriteData_int));
+	
+	wire [31:0] RAM_ReadData;
+	dual_port_RAM u5 (.CLK(CLK), .Address(ALU_result), .WriteData(ReadData2), .WriteEn(MemWrite), .ReadEn(MemRead), .ReadData(RAM_ReadData));
+endmodule

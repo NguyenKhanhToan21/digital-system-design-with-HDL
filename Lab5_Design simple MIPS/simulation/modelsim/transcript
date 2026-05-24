@@ -1,0 +1,229 @@
+vsim work.MIPS_CPU_tb
+# vsim work.MIPS_CPU_tb 
+# Loading work.MIPS_CPU_tb
+# Loading work.MIPS_CPU
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.mux_5bit
+# Loading work.RF
+# Loading work.mux_32bit
+# Loading work.ALU
+# Loading work.dual_port_RAM
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+restart -f
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+add wave *
+restart
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+restart -f
+wave add *
+# could not find wave window
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+# WARNING: No extended dataflow license exists
+restart -f
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+quit -sim
+vsim work.MIPS_CPU_tb
+# vsim work.MIPS_CPU_tb 
+# Loading work.MIPS_CPU_tb
+# Loading work.MIPS_CPU
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.mux_5bit
+# Loading work.RF
+# Loading work.mux_32bit
+# Loading work.ALU
+# Loading work.dual_port_RAM
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+quit -sim
+# Compile of ALU.v was successful.
+# Compile of Datapath.v was successful.
+# Compile of dual_port_RAM.v was successful.
+# Compile of mux_5bit.v was successful.
+# Compile of mux_32bit.v was successful.
+# Compile of RF.v was successful.
+# Compile of Datapath_tb.v was successful.
+# Compile of MIPS_CPU_tb.V was successful.
+# Compile of MIPS_CPU.V was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of MIPS_CPU_tb2.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.MIPS_CPU_tb
+# vsim work.MIPS_CPU_tb 
+# Loading work.MIPS_CPU_tb
+# Loading work.MIPS_CPU
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.mux_5bit
+# Loading work.RF
+# Loading work.mux_32bit
+# Loading work.ALU
+# Loading work.dual_port_RAM
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 60
+quit -sim
+# Compile of ALU.v was successful.
+# Compile of Datapath.v was successful.
+# Compile of dual_port_RAM.v was successful.
+# Compile of mux_5bit.v was successful.
+# Compile of mux_32bit.v was successful.
+# Compile of RF.v was successful.
+# Compile of Datapath_tb.v was successful.
+# Compile of MIPS_CPU_tb.V was successful.
+# Compile of MIPS_CPU.V was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of MIPS_CPU_tb2.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.MIPS_CPU_tb
+# vsim work.MIPS_CPU_tb 
+# Loading work.MIPS_CPU_tb
+# Loading work.MIPS_CPU
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.mux_5bit
+# Loading work.RF
+# Loading work.mux_32bit
+# Loading work.ALU
+# Loading work.dual_port_RAM
+# WARNING: No extended dataflow license exists
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 20, zero = 0
+# RAM_out = 20
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 58
+quit -sim
+# Compile of ALU.v was successful.
+# Compile of Datapath.v was successful.
+# Compile of dual_port_RAM.v was successful.
+# Compile of mux_5bit.v was successful.
+# Compile of mux_32bit.v was successful.
+# Compile of RF.v was successful.
+# Compile of Datapath_tb.v was successful.
+# Compile of MIPS_CPU_tb.V was successful.
+# Compile of MIPS_CPU.V was successful.
+# Compile of ControlUnit.v was successful.
+# Compile of MIPS_CPU_tb2.v was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.MIPS_CPU_tb
+# vsim work.MIPS_CPU_tb 
+# Loading work.MIPS_CPU_tb
+# Loading work.MIPS_CPU
+# Loading work.ControlUnit
+# Loading work.Datapath
+# Loading work.mux_5bit
+# Loading work.RF
+# Loading work.mux_32bit
+# Loading work.ALU
+# Loading work.dual_port_RAM
+# WARNING: No extended dataflow license exists
+add wave *
+run -all
+# Test1: add $s1, $s2, $s3
+# ALU_result = 15, WriteData_RF = 15, zero = 0
+# sw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 10, zero = 0
+# lw $1, 0($2)
+# ALU_result = 10, WriteData_RF = 15, zero = 0
+# RAM_out = 15
+# Test1.1: OverFlow +
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Test1.1: OverFlow -
+# ALU_result = 2147483648, WriteData_RF = 2147483648, zero = 1
+# Break in Module MIPS_CPU_tb at E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V line 59

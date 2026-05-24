@@ -1,0 +1,223 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+vALU
+Z1 !s100 :<K`EYYAIeA?oUVmMFzS23
+Z2 IEmXLJz=7T1=_@jzNA7_TX3
+Z3 V@Mg3IzK6_LbZMEYm;z5Nz2
+Z4 dE:\UIT\HDL\LAB\Lab5\simulation\modelsim
+Z5 w1773900842
+Z6 8E:/UIT/HDL/LAB/Lab5/ALU.v
+Z7 FE:/UIT/HDL/LAB/Lab5/ALU.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/ALU.v|
+Z10 o-work work -O0
+Z11 n@a@l@u
+Z12 !s108 1778816403.305000
+Z13 !s107 E:/UIT/HDL/LAB/Lab5/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vControlUnit
+Z14 !s100 4JBl8=DC6G6LDN<KdCCCJ0
+Z15 IF@;lAJ60G6RdzeZmDhNk21
+Z16 V7X@P<hG=6:;VIbIP7cUfT2
+R4
+Z17 w1778812663
+Z18 8E:/UIT/HDL/LAB/Lab5/ControlUnit.v
+Z19 FE:/UIT/HDL/LAB/Lab5/ControlUnit.v
+L0 1
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/ControlUnit.v|
+R10
+Z21 n@control@unit
+!i10b 1
+!s85 0
+Z22 !s108 1778816403.621000
+Z23 !s107 E:/UIT/HDL/LAB/Lab5/ControlUnit.v|
+!s101 -O0
+vDatapath
+Z24 !s100 [DPW1c`;i03<I]noz?2J`2
+Z25 Ii@NiaSaSZAB@:[XH[QNen1
+Z26 VcNQO6Og__Ec1m^7d98`V00
+R4
+Z27 w1778814635
+Z28 8E:/UIT/HDL/LAB/Lab5/Datapath.v
+Z29 FE:/UIT/HDL/LAB/Lab5/Datapath.v
+L0 1
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/Datapath.v|
+R10
+Z31 n@datapath
+Z32 !s108 1778816403.342000
+Z33 !s107 E:/UIT/HDL/LAB/Lab5/Datapath.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vDatapath_tb
+Z34 !s100 G`ELImZZNWHPl1@Ke2nVA0
+Z35 I@4jjP=YERZ0TE=R2`[W^Y1
+Z36 V7K75VAIZIQB5:Nl6mDQPS1
+R4
+Z37 w1778159590
+Z38 8E:/UIT/HDL/LAB/Lab5/Datapath_tb.v
+Z39 FE:/UIT/HDL/LAB/Lab5/Datapath_tb.v
+L0 2
+R8
+r1
+31
+Z40 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/Datapath_tb.v|
+R10
+Z41 n@datapath_tb
+Z42 !s108 1778816403.519000
+Z43 !s107 E:/UIT/HDL/LAB/Lab5/Datapath_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdual_port_RAM
+Z44 !s100 fG371Z;^cmTm6jbaRJfLT2
+Z45 IhKN>J6h=D]j;eac<f>X7I2
+Z46 V^m]A2ZB4AfMMO6IzPnDH92
+R4
+Z47 w1778811012
+Z48 8E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v
+Z49 FE:/UIT/HDL/LAB/Lab5/dual_port_RAM.v
+L0 1
+R8
+r1
+31
+Z50 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v|
+R10
+Z51 ndual_port_@r@a@m
+Z52 !s108 1778816403.376000
+Z53 !s107 E:/UIT/HDL/LAB/Lab5/dual_port_RAM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS_CPU
+Z54 !s100 X1JGh=cVVKfk2Km<c_1]`0
+Z55 IUlMP8omJ]N:0zV9;2B;JH2
+Z56 VZ9a99geN2i^Pm7HXk=XZc0
+R4
+Z57 w1778814669
+Z58 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V
+Z59 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU.V
+L0 1
+R8
+r1
+31
+Z60 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V|
+R10
+Z61 n@m@i@p@s_@c@p@u
+Z62 !s108 1778816403.588000
+Z63 !s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU.V|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS_CPU_tb
+Z64 IK863GDLYT9LoH1G;Zn5A33
+Z65 VlI7kT`nljJeZ7Lj8fDUgd3
+R4
+Z66 w1778816400
+Z67 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+Z68 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V
+L0 2
+R8
+r1
+31
+Z69 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+R10
+Z70 n@m@i@p@s_@c@p@u_tb
+Z71 !s100 @X3SbAeOgF7MAU4@H4FgK2
+Z72 !s108 1778816403.554000
+Z73 !s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb.V|
+!i10b 1
+!s85 0
+!s101 -O0
+vMIPS_CPU_tb2
+!i10b 1
+Z74 !s100 4<0LcniLFOgUL_;8M[>QK0
+Z75 I;_leJ>6hzAFNjYE[eR7HS0
+Z76 V7WaIDh@KeiEZzojYX_JUi0
+R4
+Z77 w1778213157
+Z78 8E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v
+Z79 FE:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1778816403.654000
+!s107 E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v|
+Z80 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/MIPS_CPU_tb2.v|
+!s101 -O0
+R10
+Z81 n@m@i@p@s_@c@p@u_tb2
+vmux_32bit
+Z82 !s100 YX8TC0dN[[So=SFbcIeA72
+Z83 I6h4fFSk11HdI95MoQ6;GY3
+Z84 VmmCK2oPX^`fZ=ZiE:VlEM2
+R4
+Z85 w1778151096
+Z86 8E:/UIT/HDL/LAB/Lab5/mux_32bit.v
+Z87 FE:/UIT/HDL/LAB/Lab5/mux_32bit.v
+L0 1
+R8
+r1
+31
+Z88 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/mux_32bit.v|
+R10
+Z89 !s108 1778816403.450000
+Z90 !s107 E:/UIT/HDL/LAB/Lab5/mux_32bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux_5bit
+Z91 !s100 WIh>>]9Elac@=AN[Hc0YO2
+Z92 IP>^Jk61io_:1gZ;_`YTV82
+Z93 VdTH^MJoeUA^=k5odNobi?3
+R4
+Z94 w1778149931
+Z95 8E:/UIT/HDL/LAB/Lab5/mux_5bit.v
+Z96 FE:/UIT/HDL/LAB/Lab5/mux_5bit.v
+L0 1
+R8
+r1
+31
+Z97 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/mux_5bit.v|
+R10
+Z98 !s108 1778816403.415000
+Z99 !s107 E:/UIT/HDL/LAB/Lab5/mux_5bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRF
+Z100 !s100 G[Zi=WJE4>i_6J>R8EWTE2
+Z101 IEjSNPKAme;oBZ>X8b;4c>1
+Z102 V:iO9d_gV:[G@PoPCMGGEn0
+R4
+Z103 w1778812992
+Z104 8E:/UIT/HDL/LAB/Lab5/RF.v
+Z105 FE:/UIT/HDL/LAB/Lab5/RF.v
+L0 1
+R8
+r1
+31
+Z106 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab5/RF.v|
+R10
+n@r@f
+Z107 !s108 1778816403.486000
+Z108 !s107 E:/UIT/HDL/LAB/Lab5/RF.v|
+!i10b 1
+!s85 0
+!s101 -O0
