@@ -1,0 +1,78 @@
+module morse_decoder(
+	input CLK, rst_n, start,
+	input [2:0] select,
+	output reg LED
+);
+	// dot = 1, dash = 111 
+	localparam IDLE = 1'b0, SEND = 1'b1;
+	reg state;
+	reg [11:0] shift_reg;
+	reg [3:0] count;
+	
+	always @(posedge CLK or negedge rst_n) begin
+		if(!rst_n) begin 
+			state <= IDLE;
+			LED <= 0;
+			count <= 0;
+		end 
+		else begin 
+			case(state) 
+				IDLE: begin 
+					LED <= 0;
+					if(start) begin 
+						state <= SEND;
+						case(select) 
+							3'b000: begin 
+								shift_reg <= 12'b000000011101; // A = .-
+								count <= 5;
+								end 
+							3'b001: begin 
+								shift_reg <= 12'b000101010111; //B = -...
+								count <= 9;
+								end 
+							3'b010: begin 
+								shift_reg <= 12'b010111010111; //C = -.-.
+								count <= 11;
+								end 
+							3'b011: begin 
+								shift_reg <= 12'b000001010111; //D = -..
+								count <= 7;
+								end 
+							3'b100: begin 
+								shift_reg <= 12'b000000000001; // E = .
+								count <= 1;
+								end
+							3'b101: begin 
+								shift_reg <= 12'b000101110101; // F = ..-.
+								count <= 9;
+								end 
+							3'b110: begin 
+								shift_reg <= 12'b000101110111; // G = --.
+								count <= 9;
+								end 
+							3'b111: begin 
+								shift_reg <= 12'b000001010101; // H = ....
+								count <= 7;
+								end 
+							endcase
+						end 
+					end 
+				SEND: begin 
+					if(count > 0) begin 
+						LED <= shift_reg[0];
+						shift_reg <= shift_reg >> 1;
+						count <= count - 1;
+						end 
+					else 
+						begin 
+							LED <= 0;
+							state <= IDLE;
+						end 
+					end 
+			endcase 
+		end 
+	end
+endmodule 
+					
+						
+								

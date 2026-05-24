@@ -1,0 +1,38 @@
+# Compile of sequence_detector.v was successful.
+# Compile of sequence_detector_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.tb_sequence_detector
+# vsim -voptargs=+acc work.tb_sequence_detector 
+# Loading work.tb_sequence_detector
+# Loading work.sequence_detector
+# ** Error: (vsim-3063) E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v(11): Port 'clk' not found in the connected module (1st connection).
+# 
+#         Region: /tb_sequence_detector/uut
+# ** Error: (vsim-3063) E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v(11): Port 'rst_n' not found in the connected module (2nd connection).
+# 
+#         Region: /tb_sequence_detector/uut
+# Error loading design
+# Compile of sequence_detector.v was successful.
+# Compile of sequence_detector_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.tb_sequence_detector
+# vsim work.tb_sequence_detector 
+# Loading work.tb_sequence_detector
+# Loading work.sequence_detector
+add wave *
+# Compile of sequence_detector_tb.v was successful.
+vsim work.tb_sequence_detector
+# vsim work.tb_sequence_detector 
+# Loading work.tb_sequence_detector
+# Loading work.sequence_detector
+add wave *
+# Compile of sequence_detector.v was successful.
+# Compile of sequence_detector_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.tb_sequence_detector
+# vsim work.tb_sequence_detector 
+# Loading work.tb_sequence_detector
+# Loading work.sequence_detector
+add wave -position insertpoint sim:/tb_sequence_detector/*
+run
+run

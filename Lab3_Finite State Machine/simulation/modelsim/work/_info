@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab3\simulation\modelsim
+vsequence_detector
+Z1 !s100 TQj3bj2`lh2H3EXoFkk[L3
+Z2 ImA8ehciUBkl@H1JKW7QSV2
+Z3 ViAORQ<i;SC7h;;UMoRfhC2
+Z4 dE:\UIT\HDL\LAB\Lab3\simulation\modelsim
+Z5 w1775124372
+Z6 8E:/UIT/HDL/LAB/Lab3/sequence_detector.v
+Z7 FE:/UIT/HDL/LAB/Lab3/sequence_detector.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/sequence_detector.v|
+Z10 o-work work -O0
+Z11 !s108 1775127616.290000
+Z12 !s107 E:/UIT/HDL/LAB/Lab3/sequence_detector.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_sequence_detector
+Z13 !s100 a_HJ5Foa;fn_m^m5`J>4j3
+Z14 I^EmQd;ljL>TJG4mT8cd4h1
+Z15 VLVX9`=J1W@JIm=W@dVOlh0
+R4
+Z16 w1775123957
+Z17 8E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v
+Z18 FE:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v
+L0 2
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v|
+R10
+Z20 !s108 1775127616.376000
+Z21 !s107 E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_traffic_lights_1
+!i10b 1
+!s100 53kj6<n[Q5fRRU[^KUIFP2
+I^lS_QlYeF_^`5KmcNYz2Q0
+VBFY6;493;Q:LLn0=SLSZ82
+R4
+w1775127613
+8E:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v
+FE:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1775127616.653000
+!s107 E:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v|
+!s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v|
+!s101 -O0
+R10
+vtraffic_lights
+Z22 !s100 X:CM?aklVjZk_leCcKL1U3
+Z23 IjUeUWNiBK0ab=[42S`mOk0
+Z24 Vh9D`E^ISQGC:@7^_CIC^z1
+R4
+Z25 w1775126856
+Z26 8E:/UIT/HDL/LAB/Lab3/traffic_lights.v
+Z27 FE:/UIT/HDL/LAB/Lab3/traffic_lights.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/traffic_lights.v|
+R10
+Z29 !s108 1775127616.477000
+Z30 !s107 E:/UIT/HDL/LAB/Lab3/traffic_lights.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtraffic_lights_1
+Z31 !s100 6f7@;T^n2ODC080B^e0Qb0
+Z32 I1=I?3fSD;fNIJEQQDST[63
+Z33 V<PLMP9YAT;o_:fXIQ=E:B2
+R4
+Z34 w1775127077
+Z35 8E:/UIT/HDL/LAB/Lab3/traffic_lights_1.v
+Z36 FE:/UIT/HDL/LAB/Lab3/traffic_lights_1.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/traffic_lights_1.v|
+R10
+!i10b 1
+!s85 0
+Z38 !s108 1775127616.565000
+Z39 !s107 E:/UIT/HDL/LAB/Lab3/traffic_lights_1.v|
+!s101 -O0

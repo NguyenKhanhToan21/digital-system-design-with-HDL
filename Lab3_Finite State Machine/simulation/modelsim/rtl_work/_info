@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab3\simulation\modelsim
+vsequence_detector
+ITMlgADhKEWk1lKD7Mig0C1
+ViAORQ<i;SC7h;;UMoRfhC2
+Z1 dE:\UIT\HDL\LAB\Lab3\simulation\modelsim
+w1775123467
+8E:/UIT/HDL/LAB/Lab3/sequence_detector.v
+FE:/UIT/HDL/LAB/Lab3/sequence_detector.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 _T3=gm_mWQbgFiHJ:flg^3
+!s85 0
+!s108 1775123604.524000
+!s107 E:/UIT/HDL/LAB/Lab3/sequence_detector.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab3|E:/UIT/HDL/LAB/Lab3/sequence_detector.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab3 -O0
+vtb_sequence_detector
+!i10b 1
+!s100 4WRjo=P4kbT`2VXlO:lka1
+IC]I:NAanW8]5X`Q[IoLC`0
+VLVX9`=J1W@JIm=W@dVOlh0
+R1
+w1775123710
+8E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v
+FE:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1775123722.678000
+!s107 E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v|
+!s90 -reportprogress|300|-work|work|E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v|
+!s101 -O0
+o-work work -O0

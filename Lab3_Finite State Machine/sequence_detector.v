@@ -1,0 +1,40 @@
+module sequence_detector(
+	input CLK, w, reset_n,
+	output reg z
+);
+	localparam [3:0] S_IDLE = 4'd0,
+	S0_1 = 4'd1, S0_2 = 4'd2, S0_3 = 4'd3, S0_4 = 4'd4,
+	S1_1 = 4'd5, S1_2 = 4'd6, S1_3 = 4'd7, S1_4 = 4'd8;
+	reg [3:0] state, next_state;
+	always @(posedge CLK or negedge reset_n) begin 
+		if (!reset_n) 
+			state <= S_IDLE;
+		else 
+			state <= next_state;
+	end
+	always @(*) begin 
+		case (state) 
+			S_IDLE: next_state = w ? S1_1 : S0_1;
+			// S1
+			S1_1: next_state = w ? S1_2 : S0_1;
+			S1_2: next_state = w ? S1_3 : S0_1;
+			S1_3: next_state = w ? S1_4 : S0_1;
+			S1_4: next_state = w ? S1_4 : S0_1;
+			// S0
+			S0_1: next_state = w ? S1_1 : S0_2;
+			S0_2: next_state = w ? S1_1 : S0_3; 
+			S0_3: next_state = w ? S1_1 : S0_4; 
+			S0_4: next_state = w ? S1_1 : S0_4;
+			default: next_state = S_IDLE;
+		endcase 
+	end 
+	always @(*) begin 
+		if(state == S1_4 || state == S0_4)
+			z = 1'b1;
+		else 
+			z = 1'b0;
+	end 
+endmodule 
+			
+		
+		

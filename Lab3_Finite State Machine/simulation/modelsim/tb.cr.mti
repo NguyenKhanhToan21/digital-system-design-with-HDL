@@ -1,0 +1,29 @@
+E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab3/sequence_detector_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_sequence_detector
+
+Top level modules:
+	tb_sequence_detector
+
+} {} {}} E:/UIT/HDL/LAB/Lab3/traffic_lights_1.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab3/traffic_lights_1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module traffic_lights_1
+
+Top level modules:
+	traffic_lights_1
+
+} {} {}} E:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab3/traffic_lights_1_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_traffic_lights_1
+
+Top level modules:
+	tb_traffic_lights_1
+
+} {} {}} E:/UIT/HDL/LAB/Lab3/sequence_detector.v {1 {vlog -work work E:/UIT/HDL/LAB/Lab3/sequence_detector.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sequence_detector
+
+Top level modules:
+	sequence_detector
+
+} {} {}}
