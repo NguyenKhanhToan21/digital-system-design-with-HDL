@@ -1,0 +1,39 @@
+`timescale 1ns/1ps 
+
+module Counter_4bit_tb;
+  reg CLK, Reset_n, enable, up_down;
+  wire [3:0] q_out;
+  
+  Counter_4bit uut ( .CLK(CLK), .Reset_n(Reset_n), .enable(enable), .up_down(up_down), .q_out(q_out));
+  initial CLK = 0;
+  always #5 CLK = ~CLK;
+  
+  initial begin 
+    //Init 
+    Reset_n = 0;
+    enable = 0;
+    up_down = 0;
+    
+    #10 
+    Reset_n = 1; // tat reset 
+    
+    // Count_up 
+    enable = 1;
+    up_down = 0;
+    #100;
+    // Count_down 
+    enable = 1;
+    up_down = 1;
+    #100;
+    // Disable 
+    enable = 0;
+    #10;
+    // Reset 
+    Reset_n = 0;
+    #10;
+    Reset_n = 1;
+    
+    #10;
+    $stop;
+  end 
+endmodule 

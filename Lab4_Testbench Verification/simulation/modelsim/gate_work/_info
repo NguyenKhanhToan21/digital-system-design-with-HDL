@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab4\simulation\modelsim
+vALU_32bit
+IVeLWmV;k<SfW;C8[<zE;l1
+ViY4`Ejlk?0:@UYRcaka0<3
+Z1 dE:\UIT\HDL\LAB\Lab4\simulation\modelsim
+w1778213593
+8Lab4.vo
+FLab4.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@u_32bit
+!i10b 1
+!s100 7J:imLC6mR0JLld5kEcL32
+!s85 0
+!s108 1778213606.602000
+!s107 Lab4.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Lab4.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vALU_32bit_tb
+!i10b 1
+!s100 E6X2oOVFC@aQdb5cjU5f40
+IH6@M:z3]f;cE7FDS2n=>D0
+VfZ?m=]^YR3fiE`CVa;V]c0
+R1
+w1777005129
+8E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+FE:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1778213606.669000
+!s107 E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab4|E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab4 -O0
+n@a@l@u_32bit_tb

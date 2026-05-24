@@ -1,0 +1,412 @@
+# Reading E:/UIT/quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lab4_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying E:\UIT\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\UIT\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {Lab4.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_32bit
+# 
+# Top level modules:
+# 	ALU_32bit
+# 
+# vlog -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab4 {E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_32bit_tb
+# 
+# Top level modules:
+# 	ALU_32bit_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc"  ALU_32bit_tb
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps ALU_32bit_tb 
+# Loading work.ALU_32bit_tb
+# Loading work.ALU_32bit
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Lab4_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from Lab4_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_32bit_tb File: E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time = 0 | sel = 000 | A = 00000001 | B = 00000000 | C = xxxxxxxx
+# Time = 10000 | sel = 000 | A = 00000001 | B = 00000000 | C = xxxxxxxX
+# Time = 10000 | sel = 000 | A = 00000001 | B = 00000000 | C = xxxXxxxX
+# Time = 10000 | sel = 000 | A = 00000001 | B = 00000000 | C = xxxXxxXX
+# Time = 10000 | sel = 000 | A = 00000001 | B = 00000000 | C = xxxXXxXX
+# NOT A: C = xxxxxxxxxxxxxxx1x1xxxxxxxxx1x1xx
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = xxxXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = xxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = xxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XxXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXxXX
+# Time = 10000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXxXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXXXXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXfXXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXffXXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = XXfffXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = fXfffXXX
+# Time = 11000 | sel = 001 | A = 0000007b | B = 0000007b | C = fXffffXX
+# Time = 12000 | sel = 001 | A = 0000007b | B = 0000007b | C = fXfffffX
+# Time = 12000 | sel = 001 | A = 0000007b | B = 0000007b | C = fXfffffe
+# Time = 12000 | sel = 001 | A = 0000007b | B = 0000007b | C = fffffffe
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = fffffffa
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = ffffffea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = fbffffea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = fb7fffea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = fb7fefea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b7fefea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5fefea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5eefea
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5eefe2
+# Time = 17000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5ee7e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5ce7e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5c67e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b5c27e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 7b1c27e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b1c27e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b0c27e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b0827e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b0826e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b0026e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b0024e2
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 5b002462
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53002462
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53002460
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53002440
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53000440
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53000040
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 53000000
+# Time = 18000 | sel = 001 | A = 0000007b | B = 0000007b | C = 43000000
+# Time = 19000 | sel = 001 | A = 0000007b | B = 0000007b | C = 42000000
+# Time = 19000 | sel = 001 | A = 0000007b | B = 0000007b | C = 40000000
+# Time = 19000 | sel = 001 | A = 0000007b | B = 0000007b | C = 00000000
+# A AND B: C = 00000000000000000000000000000000
+# Time = 20000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000000
+# Time = 21000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000008
+# Time = 21000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000018
+# Time = 22000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000038
+# Time = 22000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000003a
+# Time = 22000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000003b
+# Time = 22000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000007b
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000007f
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000006f
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000006b
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0080006b
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 0000006b
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 8000006b
+# Time = 27000 | sel = 010 | A = 0000000a | B = 00000005 | C = 80000063
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000063
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 20000063
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000063
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 08000063
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 08000061
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 08000041
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000041
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000001
+# Time = 28000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000000
+# Time = 29000 | sel = 010 | A = 0000000a | B = 00000005 | C = 02000000
+# Time = 29000 | sel = 010 | A = 0000000a | B = 00000005 | C = 00000000
+# A XOR B: C = 00000000000000000000000000000000
+# Time = 30000 | sel = 011 | A = 0000000a | B = 00000005 | C = 00000000
+# Time = 31000 | sel = 011 | A = 0000000a | B = 00000005 | C = 00000010
+# Time = 31000 | sel = 011 | A = 0000000a | B = 00000005 | C = 00000018
+# Time = 31000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000001c
+# Time = 31000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000000c
+# Time = 32000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000000e
+# Time = 32000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000004e
+# Time = 32000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000000e
+# Time = 33000 | sel = 011 | A = 0000000a | B = 00000005 | C = 0000000f
+# A OR B: C = 00000000000000000000000000001111
+# Time = 40000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0000000f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0000001f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0000101f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0400101f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0400181f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 0480181f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 04a0181f
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 04a01817
+# Time = 47000 | sel = 100 | A = 0000000a | B = 00000000 | C = 04a11817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 04a31817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84a31817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84a39817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84a3d817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84e3d817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84f3d817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84f7d817
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = 84f7d815
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4f7d815
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4f7d915
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4ffd915
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4ffdb15
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4ffdb95
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4ffdbb5
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = a4fffbb5
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = acfffbb5
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = acffffb5
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = bcffffb5
+# Time = 48000 | sel = 100 | A = 0000000a | B = 00000000 | C = bcfffff5
+# Time = 49000 | sel = 100 | A = 0000000a | B = 00000000 | C = bdfffff5
+# Time = 49000 | sel = 100 | A = 0000000a | B = 00000000 | C = bffffff5
+# Time = 49000 | sel = 100 | A = 0000000a | B = 00000000 | C = fffffff5
+# Time = 50000 | sel = 100 | A = 0000000a | B = 00000000 | C = ffffffe5
+# Time = 50000 | sel = 100 | A = 0000000a | B = 00000000 | C = ffff7fe5
+#  A - 1: C =4294934501
+# Time = 50000 | sel = 101 | A = 0000000a | B = 00000005 | C = ffff7fe5
+# Time = 50000 | sel = 101 | A = 0000000a | B = 00000005 | C = ffff3fe5
+# Time = 50000 | sel = 101 | A = 0000000a | B = 00000005 | C = fffe3fe5
+# Time = 50000 | sel = 101 | A = 0000000a | B = 00000005 | C = fffe3fe1
+# Time = 50000 | sel = 101 | A = 0000000a | B = 00000005 | C = fffe3fe9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = fffe3fc9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = fffe2fc9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ffee2fc9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ff6e2fc9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ff6c2fc9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ff4c27c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ff4c26c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = ff4c24c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = fb4c24c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = fb4c20c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = db4c20c9
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = db4c2089
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = db482089
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = db082089
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = db080089
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = da080089
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = da080009
+# Time = 51000 | sel = 101 | A = 0000000a | B = 00000005 | C = da000009
+# Time = 52000 | sel = 101 | A = 0000000a | B = 00000005 | C = d8000009
+# Time = 52000 | sel = 101 | A = 0000000a | B = 00000005 | C = 98000009
+# Time = 52000 | sel = 101 | A = 0000000a | B = 00000005 | C = 18000009
+# Time = 52000 | sel = 101 | A = 0000000a | B = 00000005 | C = 10000009
+# Time = 52000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00000009
+# Time = 57000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00000019
+# Time = 58000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0000001d
+# Time = 58000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0000000d
+# Time = 58000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00000005
+# Time = 58000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0000000d
+# Time = 58000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00000009
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00100009
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00100029
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00120029
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00120129
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00120128
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00120528
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00520528
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00521528
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 00521508
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 01521508
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 01521408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 21521408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 21421408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 21621408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 01621408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 01629408
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 01629488
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0162b488
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0162b4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0142b4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 4142b4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 414ab4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454ab4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 45cab4c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 45cab6c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454ab6c8
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454ab6ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454ab4ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454eb4ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = 454eb0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c54eb0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c54ef0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c74ef0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64ef0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64ff0ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64f70ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64f60ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64f20ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c64f28ca
+# Time = 59000 | sel = 101 | A = 0000000a | B = 00000005 | C = c60f28ca
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c60f288a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c60f208a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c607208a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c207208a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c007208a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c005208a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c005008a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = c004008a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 8004008a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 8004000a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 8000000a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0000000a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 0800000a
+# Time = 60000 | sel = 101 | A = 0000000a | B = 00000005 | C = 1800000a
+# A + B: C =402653194
+# Time = 60000 | sel = 110 | A = 00000014 | B = 0000000f | C = 1800000a
+# Time = 60000 | sel = 110 | A = 00000014 | B = 0000000f | C = 1000000a
+# Time = 61000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000000a
+# Time = 61000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000000e
+# Time = 63000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000000f
+# Time = 67000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000001f
+# Time = 68000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000000f
+# Time = 68000 | sel = 110 | A = 00000014 | B = 0000000f | C = 0000000b
+# Time = 68000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00000003
+# Time = 68000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00000007
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00100007
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00100027
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00120027
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00120127
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00120126
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00120526
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00520526
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 00521526
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 01521526
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 21521526
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 21521527
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 21721527
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 21729527
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 217295a7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 2172b587
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 2172b5c7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 6172b5c7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 617ab5c7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 657ab5c7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 65fab5c7
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 65fab5c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 65fab7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = 65feb7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e5feb7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e5fef7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fef7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fff7c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fff6c5
+# Time = 69000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fffec5
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fffcc5
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fff8c5
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7fff885
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = e7ffe885
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = efffe885
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = efffe805
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = efff6805
+# Time = 70000 | sel = 110 | A = 00000014 | B = 0000000f | C = ffff6805
+# A - B: C =4294928389
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = ffff6805
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = ffff6005
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = fffd6005
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = fffd2005
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = fffc2005
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = fffc0005
+# Time = 70000 | sel = 111 | A = 0000000a | B = 00000000 | C = ffec0005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = ffcc0005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fecc0005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe8c0005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe8c0015
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe0c0015
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe080015
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe000015
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fe000005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fa000005
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = fa000001
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = da000001
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = d8000001
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = d8000009
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = d8000001
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = 98000001
+# Time = 71000 | sel = 111 | A = 0000000a | B = 00000000 | C = 98000005
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 9800000d
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 1800000d
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 1000000d
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 10000005
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00000005
+# Time = 72000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00000007
+# Time = 73000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00000005
+# Time = 77000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00000015
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00100015
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00100035
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00120035
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00120135
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00120134
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00120534
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00520534
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00521534
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00521514
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 01521514
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 01521414
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 21521414
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 21421414
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 21421415
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 21621415
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 01621415
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 01629415
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 01629495
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 0162b495
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 0162b4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 0142b4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 4142b4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 414ab4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 454ab4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 45cab4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 45cab6d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 454ab6d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 454ab4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 454eb4d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = 454eb0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c54eb0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c54ef0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c74ef0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64ef0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64ff0d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64f70d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64f60d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64f20d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c64f28d5
+# Time = 79000 | sel = 111 | A = 0000000a | B = 00000000 | C = c60f28d5
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c60f2895
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c60f2095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c6072095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c2072095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c0072095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c0052095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c0050095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = c0040095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 80040095
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 80040015
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 80000015
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 00000015
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 08000015
+# Time = 80000 | sel = 111 | A = 0000000a | B = 00000000 | C = 18000015
+#  A + 1: C =402653205
+# Break in Module ALU_32bit_tb at E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v line 53
+# Simulation Breakpoint: Break in Module ALU_32bit_tb at E:/UIT/HDL/LAB/Lab4/ALU_32bit_tb.v line 53
+# MACRO ./Lab4_run_msim_gate_verilog.do PAUSED at line 17

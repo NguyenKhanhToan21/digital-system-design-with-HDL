@@ -1,0 +1,28 @@
+module Counter_4bit(
+    input CLK, 
+    input Reset_n, 
+    input enable, 
+    input up_down,
+    output reg [3:0] q_out
+);
+
+  always @(posedge CLK or negedge Reset_n) begin 
+      if(!Reset_n) begin
+          q_out <= 4'd0;
+      end
+      else begin 
+          if(enable) begin 
+              if (up_down) begin 
+                if( q_out != 4'd0)
+                  q_out <= q_out - 4'd1;  // down
+            end 
+              else begin 
+                if( q_out != 4'd14)
+                  q_out <= q_out + 4'd1;  // up
+            end 
+          end
+       //else q_out <= q_out; tool se tu biet giu gia tri
+      end 
+  end 
+
+endmodule

@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\UIT\HDL\LAB\Lab4\simulation\modelsim
+vhex7seg
+!i10b 1
+!s100 gTaYP0SHG_^eAXVbQ@D2_1
+Id@Rk3RQ1iK@a2iUmMK:4>2
+V83[70RLlSPUA@X``e0>F>2
+Z1 dE:\UIT\HDL\LAB\Lab4\simulation\modelsim
+w1776962582
+8E:/UIT/HDL/LAB/Lab4/hex7seg.v
+FE:/UIT/HDL/LAB/Lab4/hex7seg.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1776994319.100000
+!s107 E:/UIT/HDL/LAB/Lab4/hex7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab4|E:/UIT/HDL/LAB/Lab4/hex7seg.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/UIT/HDL/LAB/Lab4 -O0
+vSRAM_Interface
+IPJTnEEiL`8aCgP]P5Rz7C2
+VB6?3TzM0mVWcmh0K6eP@63
+R1
+w1776962548
+8E:/UIT/HDL/LAB/Lab4/SRAM_Interface.v
+FE:/UIT/HDL/LAB/Lab4/SRAM_Interface.v
+L0 1
+R2
+r1
+31
+R3
+n@s@r@a@m_@interface
+!i10b 1
+!s100 GlYQI?hHXZzA53A_2=>]T1
+!s85 0
+!s108 1776994318.987000
+!s107 E:/UIT/HDL/LAB/Lab4/SRAM_Interface.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/UIT/HDL/LAB/Lab4|E:/UIT/HDL/LAB/Lab4/SRAM_Interface.v|
+!s101 -O0
+R4
